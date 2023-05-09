@@ -1,6 +1,6 @@
+import { sayHello } from "@example/lib";
 import Image from "next/image";
 import styles from "./page.module.css";
-import { sayHello } from "@example/lib";
 
 export default function Home() {
   return (
