@@ -1,0 +1,12 @@
+{
+  "name": "@example/lib",
+  "version": "1.0.0",
+  "private": true,
+  "main": "./src/index.ts",
+  "depdndencies": {
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "example": "workspace:^"
+  }
+}
