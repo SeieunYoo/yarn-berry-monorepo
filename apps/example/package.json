@@ -6,9 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "typecheck": "tsc --project ./tsconfig.json --noEmit"
   },
   "dependencies": {
+    "@example/lib": "workspace:^",
+    "@example/ui": "workspace:^",
     "@types/node": "20.1.1",
     "@types/react": "18.2.6",
     "@types/react-dom": "18.2.4",

@@ -56,11 +56,24 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@example/lib@workspace:packages/lib":
+"@example/lib@workspace:^, @example/lib@workspace:packages/lib":
   version: 0.0.0-use.local
   resolution: "@example/lib@workspace:packages/lib"
   dependencies:
     example: "workspace:^"
+  languageName: unknown
+  linkType: soft
+
+"@example/ui@workspace:^, @example/ui@workspace:packages/ui":
+  version: 0.0.0-use.local
+  resolution: "@example/ui@workspace:packages/ui"
+  dependencies:
+    "@types/node": ^20.1.1
+    "@types/react": ^18.2.6
+    "@types/react-dom": ^18.2.4
+    react: ^18.2.0
+    react-dom: ^18.2.0
+    typescript: ^5.0.4
   languageName: unknown
   linkType: soft
 
@@ -239,7 +252,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:20.1.1":
+"@types/node@npm:20.1.1, @types/node@npm:^20.1.1":
   version: 20.1.1
   resolution: "@types/node@npm:20.1.1"
   checksum: 47961ee23f873c14c3f6045422ff3059f3bfb10231ef3080a7a72d7215cc8c2623fa8cedb7b246305962fa9c1e0c9e381e04b12eb3e9ec5d076025c6231ac8da
@@ -253,7 +266,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:18.2.4":
+"@types/react-dom@npm:18.2.4, @types/react-dom@npm:^18.2.4":
   version: 18.2.4
   resolution: "@types/react-dom@npm:18.2.4"
   dependencies:
@@ -262,7 +275,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:18.2.6":
+"@types/react@npm:*, @types/react@npm:18.2.6, @types/react@npm:^18.2.6":
   version: 18.2.6
   resolution: "@types/react@npm:18.2.6"
   dependencies:
@@ -1242,6 +1255,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "example@workspace:apps/example"
   dependencies:
+    "@example/lib": "workspace:^"
+    "@example/ui": "workspace:^"
     "@types/node": 20.1.1
     "@types/react": 18.2.6
     "@types/react-dom": 18.2.4
@@ -2521,7 +2536,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-dom@npm:18.2.0":
+"react-dom@npm:18.2.0, react-dom@npm:^18.2.0":
   version: 18.2.0
   resolution: "react-dom@npm:18.2.0"
   dependencies:
@@ -2540,7 +2555,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:18.2.0":
+"react@npm:18.2.0, react@npm:^18.2.0":
   version: 18.2.0
   resolution: "react@npm:18.2.0"
   dependencies:
