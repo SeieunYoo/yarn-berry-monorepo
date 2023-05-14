@@ -56,11 +56,27 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@example/admin@workspace:apps/admin":
+  version: 0.0.0-use.local
+  resolution: "@example/admin@workspace:apps/admin"
+  dependencies:
+    "@example/lib": "workspace:^"
+    "@example/ui": "workspace:^"
+    "@types/node": 20.1.1
+    "@types/react": 18.2.6
+    "@types/react-dom": 18.2.4
+    eslint: 8.40.0
+    eslint-config-next: 13.4.1
+    next: 13.4.1
+    react: 18.2.0
+    react-dom: 18.2.0
+    typescript: 5.0.4
+  languageName: unknown
+  linkType: soft
+
 "@example/lib@workspace:^, @example/lib@workspace:packages/lib":
   version: 0.0.0-use.local
   resolution: "@example/lib@workspace:packages/lib"
-  dependencies:
-    example: "workspace:^"
   languageName: unknown
   linkType: soft
 
@@ -1251,7 +1267,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"example@workspace:^, example@workspace:apps/example":
+"example@workspace:apps/example":
   version: 0.0.0-use.local
   resolution: "example@workspace:apps/example"
   dependencies:
